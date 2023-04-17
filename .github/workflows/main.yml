@@ -17,7 +17,7 @@ jobs:
         name: Login to Docker SAG
         uses: docker/login-action@v2
         with:
-          registry: ${{SAG_CONTAINER}}
+          registry: sagcr.azurecr.io
           username: ${{USER_SAG_CONTAINER}}
           password: ${{TOKEN_SAG_CONTAINER}}
       -
