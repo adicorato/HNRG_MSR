@@ -28,7 +28,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.USER_DOCKER_HUB }}
-          password: ${{ secrets.PASSWORD_DOCKER_HUB_SECRET }}
+          password: ${{ secrets.PASSWORD_DOCKER_HUB }}
       -
         name: Build and push
         uses: docker/build-push-action@v4
